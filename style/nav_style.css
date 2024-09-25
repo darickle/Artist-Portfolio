@@ -1,0 +1,188 @@
+/* Adding fonts from ttf font folder */
+@font-face {
+    font-family: Sacramento;
+    src: url(fonts/Sacramento-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Styling for entire page */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Home navbar */
+.bg-img{
+    height: 99vh;
+    width: 100%;
+    background-image: linear-gradient(hsla(145, 25%, 35%, 1), hsla(0,0%,0%,0)),url(images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bg-img2{
+    height: 99vh;
+    width: 100%;
+    background-image: linear-gradient(hsla(145, 25%, 35%, 1), hsla(0,0%,0%,0)),url(images/background2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bg-img3{
+    height: 99vh;
+    width: 100%;
+    background-image: linear-gradient(hsla(145, 25%, 35%, 1), hsla(0,0%,0%,0)),url(images/person2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.quote-container {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.quote {
+    color: white;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.learn-more {
+    color: white; 
+    text-decoration: none;
+    display: block; 
+    margin-top: 50px;
+    font-size: 16px;
+    font-family: Tahoma, sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    width: 90px;
+    margin: 50px auto 0;
+}
+/* Nav bar on other pages */
+.topnav{
+    background-color: hsl(145, 25%, 35%);
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+}
+/* Formatting text, fonts, padding, iteractions */
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+}
+.logo{
+    color: hsl(0, 0%, 100%);
+    font-size: 40px;
+    font-family: "Sacramento";
+    display:inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+nav ul li a{
+    color: hsl(0, 0%, 70%);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: 	hsl(140, 25%, 25%);
+    transition: .5s;
+}
+nav ul li a.active{
+    color: hsl(0, 0%, 100%);
+}
+/* Footer */
+.footer {
+    background-color: hsl(145, 25%, 35%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.social-icons li {
+    display: inline-block;
+    margin: 0 18px;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+}
+.contact-info {
+    margin-bottom: 10px;
+}
+.contact-info a {
+    color: #fff;
+}
+.copyright {
+    font-size: 12px;
+}
+/* Hiding the hamburger menu */
+.hamburger a.icon {
+    display: none;
+}
+.hamburger a{
+    display: none;
+}
+/* Responsive hamburger menu*/
+@media only screen and (max-width: 800px){
+    nav ul li{
+        display: none;
+    }
+    .hamburger{
+        overflow: hidden;
+        background-color: hsl(0, 0%, 0%);
+        position: static;
+    }
+    .hamburger a{
+        color: hsl(0, 0%, 75%);
+        text-decoration: none;
+        padding: 32px 32px;
+        font-size: 16px;
+        display: block;
+    }
+    .hamburger a:hover {
+        color: hsl(140, 25%, 25%);
+    }
+    .hamburger a.icon{
+        background-color: hsla(0, 0%, 0%, 0);
+        display: block;
+        position: absolute;
+        font-size: 25px;
+        right: 0px;
+        top: 0px;
+    }
+    .hamburger #myLinks {
+        display: none;
+        position: absolute;
+        margin-top: 16px;
+        background-color: hsla(145, 25%, 35%);
+        width: 100%;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+    }
+    #myLinks {
+        z-index: 1000; 
+        position: relative;
+    }
+}

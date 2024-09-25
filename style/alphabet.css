@@ -1,0 +1,48 @@
+.slider {
+    background-color: hsl(0, 0%, 85%);
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gold_frame {
+    margin-left: 17%;
+    margin-top: -2.5%;
+    position: absolute;
+    width: 66%;
+    height: 50%;
+}
+
+.slides img {
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+    display: none;
+    padding-bottom: 65%;
+}
+
+img.displayImage {
+    display: block;
+}
+
+.slider button {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    background-color: hsla(0, 0%, 100%, 0);
+    color:hsl(145, 25%, 35%);
+    border: none;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

@@ -1,0 +1,65 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: hsl(23, 100%, 92%);
+    font-family: "Montserrat", sans-serif;
+    color: hsl(145, 25%, 35%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h2, h3 {
+    color: hsl(145, 25%, 35%);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.animated-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+
+    .image-container {
+        margin-top: 20px;
+    }
+}
